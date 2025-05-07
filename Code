@@ -18,7 +18,7 @@ for month in range(1, months + 1):
 
 
 final_amount = round(capital, 2)
-print(f"\n📈 Final capital after {years} years : {final_amount} €")
+print(f"\n Final capital after {years} years : {final_amount} €")
 
 
 plt.figure(figsize=(10, 5))
