@@ -1,54 +1,34 @@
-<header>
+# Savings / Investment Simulator
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+## Project Objective
 
-# GitHub Pages
+This program was developed to provide a simple and accessible tool to better understand the principles of long-term saving and investing.  
+It is intended primarily for individuals who want to plan their finances over time, such as regular savers or students looking to visualize the power of compound interest.
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+The simulator models how a capital investment grows over time when monthly contributions are made and interest is compounded. It helps users see how time and consistency can impact overall returns.
 
-</header>
+## How It Works
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+The user can easily modify three key parameters in the code:
 
-## Step 1: Enable GitHub Pages
+- `monthly_saving`: amount saved each month (in euros)
+- `annual_interest_rate`: annual interest rate (as a percentage)
+- `years`: investment duration (in years)
 
-_Welcome to GitHub Pages and Jekyll :tada:!_
+Once the parameters are set, the program:
 
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
+1. Calculates capital growth month by month, using compound interest.
+2. Displays the **final capital** after the investment period.
+3. Generates a **graph** showing capital progression over time.
 
-### :keyboard: Activity: Enable GitHub Pages
+## Dependencies
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
+This program requires only one external library:
 
-<footer>
+- [`matplotlib`](https://matplotlib.org/): used to generate the capital growth chart
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+If it's not already installed, you can install it with:
 
----
+```bash
+pip install matplotlib
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
