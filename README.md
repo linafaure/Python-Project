@@ -29,10 +29,6 @@ This program requires only one external library:
 
 - [`matplotlib`](https://matplotlib.org/): used to generate the capital growth chart
 
-If it's not already installed, you can install it with:
-
-```bash
-pip install matplotlib
-
+If it's not already installed, you can install it with: pip install matplotlib
 
 The code can be used in environments such as Google Colab, Jupyter Notebook, Spyder, or any graphics-enabled Python editor. It doesn't require a database connection or complex configuration.
