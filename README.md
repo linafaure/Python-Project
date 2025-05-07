@@ -21,6 +21,8 @@ Once the parameters are set, the program:
 2. Displays the **final capital** after the investment period.
 3. Generates a **graph** showing capital progression over time.
 
+Once this data is entered, the program automatically calculates the capital evolution month by month. At the end of the simulation, it displays the total capital obtained after the specified duration and generates a graph showing the capital progression over time.
+
 ## Dependencies
 
 This program requires only one external library:
@@ -32,3 +34,4 @@ If it's not already installed, you can install it with:
 ```bash
 pip install matplotlib
 
+The code can be used in environments such as Google Colab, Jupyter Notebook, Spyder, or any graphics-enabled Python editor. It doesn't require a database connection or complex configuration.
