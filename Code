@@ -1,0 +1,64 @@
+import matplotlib.pyplot as plt
+
+
+monthly_saving = 200           
+annual_interest_rate = 5       
+years = 10                     
+
+
+months = years * 12
+monthly_rate = annual_interest_rate / 12 / 100
+
+capital = 0
+capital_progression = []
+
+for month in range(1, months + 1):
+    capital = capital * (1 + monthly_rate) + monthly_saving
+    capital_progression.append(capital)
+
+
+final_amount = round(capital, 2)
+print(f"\n📈 Final capital after {years} years : {final_amount} €")
+
+
+plt.figure(figsize=(10, 5))
+plt.plot(range(1, months + 1), capital_progression, label="Accumulated capital", color='green')
+plt.title("Evolution of capital over time")
+plt.xlabel("Month")
+plt.ylabel("Amount (€)")
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+plt.show()
+import matplotlib.pyplot as plt
+
+
+monthly_saving = 200           
+annual_interest_rate = 5       
+years = 10                     
+
+
+months = years * 12
+monthly_rate = annual_interest_rate / 12 / 100
+
+capital = 0
+capital_progression = []
+
+for month in range(1, months + 1):
+    capital = capital * (1 + monthly_rate) + monthly_saving
+    capital_progression.append(capital)
+
+
+final_amount = round(capital, 2)
+print(f"\n📈 Final capital after {years} years : {final_amount} €")
+
+
+plt.figure(figsize=(10, 5))
+plt.plot(range(1, months + 1), capital_progression, label="Accumulated capital", color='green')
+plt.title("Evolution of capital over time")
+plt.xlabel("Month")
+plt.ylabel("Amount (€)")
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+plt.show()
